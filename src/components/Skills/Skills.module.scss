@@ -1,0 +1,39 @@
+@import "../../common/styles/variable.module.scss";
+
+.skillsBlock {
+  display: flex;
+  height: 100vh;
+  background-color: #cdd9ee;
+
+  h2 {
+    display: block;
+    border: 1px solid $borderClr;
+    background-color: gray;
+  }
+
+  .skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .skills {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  .skillsBlock{
+    height: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .skillsBlock{
+    height: 100vh;
+  }
+}

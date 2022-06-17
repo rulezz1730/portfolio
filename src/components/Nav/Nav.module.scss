@@ -1,0 +1,24 @@
+@import '../../common/styles/variable.module.scss';
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid $borderClr;
+
+    a {
+        color: darkslategrey;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 360px) {
+    .nav{
+       width: 90%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav{
+        width: 300px;
+    }
+}

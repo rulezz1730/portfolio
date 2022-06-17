@@ -1,0 +1,29 @@
+.myJob {
+  border: 1px solid black;
+  box-sizing: border-box;
+
+  .jobViewBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background: #76a4a4;
+  }
+  .jobDescription{
+    text-align: center;
+  }
+}
+
+@media (min-width: 360px) {
+  .myJob {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 500px) {
+  .myJob {
+    width:350px;;
+  }
+}

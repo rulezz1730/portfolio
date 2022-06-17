@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #c7e8f5;
+}
+
+
+@media (min-width: 360px) {
+    .header{
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .header{
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .header{
+        justify-content: flex-end;
+    }
+}

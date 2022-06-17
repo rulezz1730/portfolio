@@ -1,0 +1,31 @@
+.myWorksBlock {
+  border: 1px solid blue;
+  width: 100%;
+  height: 100vh;
+  background-color: #b9ccff;
+
+  .myWorksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .jobListContainer{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  .myWorksBlock{
+    height: 100%;
+  }
+}
+@media (min-width: 900px) {
+  .myWorksBlock{
+    height: 100vh;
+  }
+}
