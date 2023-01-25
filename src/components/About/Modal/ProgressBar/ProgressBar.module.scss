@@ -1,0 +1,34 @@
+@import "src/common/styles/variable.module";
+
+.progressiveBar{
+  font-size: 15px;
+  color: $mainFontColor;
+
+  .info{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5px;
+
+    .label{
+    }
+
+    .percent{
+    }
+
+  }
+
+  .progressiveLine{
+    height: 2px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    background: hsla(0,0%,100%,.15);
+
+    .pouringLine{
+      height: 100%;
+      border-radius: inherit;
+      background-color: nth($mainColor, 2);
+    }
+  }
+
+}

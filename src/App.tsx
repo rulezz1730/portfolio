@@ -1,24 +1,33 @@
 import React from 'react';
-import './App.module.scss';
-import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
-import Skills from "./components/Skills/Skills";
-import MyWorks from "./components/MyWorks/MyWorks";
-import Wish from "./components/Wish/Wish";
-import Contacts from "./components/Contacts/Contacts";
-import Footer from "./components/Footer/Footer";
+import styles from './App.module.scss';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contacts from './components/Contacts/Contacts';
+import ParticleBackground from './components/Particle/ParticleBackground';
+import {Navigate, Route, Routes} from 'react-router-dom';
+import MobileMenu from "./components/MobileMenu/MobileMenu";
+import NotFound404 from "./components/Test/404Page";
 
 function App() {
-    return (
-        <div className="App">
-            <Header/>
-            <Main/>
-            <Skills/>
-            <MyWorks/>
-            <Wish/>
-            <Contacts/>
-            <Footer/>
-        </div>
+    return (<>
+            <div className={styles.app}>
+                        <Header/>
+                        <MobileMenu/>
+                    <Routes>
+                        {['/', '/portfolio'].map((path, index) =>
+                            <Route path={path} key={index} element={<Navigate to='/home'/>}/>)
+                        }w
+                        <Route path='/home' element={<Home/>}/>
+                        <Route path='/projects' element={<Projects/>}/>
+                        <Route path='/about' element={<About/>}/>
+                        <Route path='/contacts' element={<Contacts/>}/>
+                        <Route path='/*' element={<NotFound404/>}/>
+                    </Routes>
+                <ParticleBackground/>
+            </div>
+        </>
     );
 }
 

@@ -1,0 +1,15 @@
+.notFoundBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 50px;
+
+  p {
+    span{
+      font-weight: bold;
+    }
+    white-space: pre-line;
+    text-align: center;
+  }
+}

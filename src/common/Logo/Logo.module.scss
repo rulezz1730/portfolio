@@ -1,0 +1,24 @@
+.logo {
+  display: block;
+  max-width: 200px;
+  letter-spacing: 2.2px;
+  color: #fff;
+  font-weight: 400;
+  cursor: pointer;
+
+  span {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #f13131;
+    letter-spacing: normal;
+
+    .firstLogoLetter {
+      display: inline-block;
+      width: 44px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+}

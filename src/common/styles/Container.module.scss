@@ -1,10 +1,18 @@
 @import "variable.module";
-//
 
 .container {
+  max-width: 1000px;
   margin: 0 auto;
-  width: 80%;
-  height: 100%;
-  border: 1px solid $borderClr;
 }
 
+@media (max-width: 700px) {
+  .container{
+    min-width: 720px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container{
+    min-width: 360px;
+  }
+}

@@ -1,0 +1,47 @@
+@import './src/common/styles/variable.module';
+
+.listInner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .time {
+    width: 35%;
+
+    span {
+      padding: 10px 25px;
+      font-size: 15px;
+      background-color: hsla(0, 0%, 100%, .05);
+      color: $mainFontColor;
+      border-radius: 50px;
+      white-space: nowrap;
+    }
+  }
+
+  .place {
+    max-width: 60%;
+    text-align: right;
+    font-size: 14px;
+    color: $mainFontColor;
+
+    h3 {
+      margin-bottom: 2px;
+      font-size: 15px;
+    }
+  }
+}
+
+
+@media (max-width: 755px) {
+  .listInner{
+    flex-direction: column;
+    align-items: start;
+    .time{
+      margin-bottom: 15px;
+    }
+    .place{
+      text-align: left;
+    }
+  }
+}

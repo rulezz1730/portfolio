@@ -1,0 +1,12 @@
+.skill {
+  transition: all .3s ease-in-out;
+
+  .skillItem {
+    width: inherit;
+    height: inherit;
+  }
+
+  &:hover {
+    transform: scale(1.4);
+  }
+}

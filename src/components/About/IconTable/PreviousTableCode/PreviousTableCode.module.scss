@@ -1,0 +1,64 @@
+//
+//@keyframes rotating {
+//  from {
+//    -ms-transform: rotate(0deg);
+//    -moz-transform: rotate(0deg);
+//    -webkit-transform: rotate(0deg);
+//    -o-transform: rotate(0deg);
+//    transform: rotate(0deg);
+//  }
+//  to {
+//    -ms-transform: rotate(360deg);
+//    -moz-transform: rotate(360deg);
+//    -webkit-transform: rotate(360deg);
+//    -o-transform: rotate(360deg);
+//    transform: rotate(360deg);
+//  }
+//}
+//
+//@-webkit-keyframes rotating /* Safari and Chrome */
+//{
+//  from {
+//    -webkit-transform: rotate(0deg);
+//    -o-transform: rotate(0deg);
+//    transform: rotate(0deg);
+//  }
+//  to {
+//    -webkit-transform: rotate(360deg);
+//    -o-transform: rotate(360deg);
+//    transform: rotate(360deg);
+//  }
+//}
+//
+//.rotating {
+//  -webkit-animation: rotating 20s linear infinite;
+//  -moz-animation: rotating 20s linear infinite;
+//  -ms-animation: rotating 20s linear infinite;
+//  -o-animation: rotating 20s linear infinite;
+//  animation: rotating 20s linear infinite;
+//  transition: all .3s ease-in-out;
+//}
+//.skillsItems {
+//  display: flex;
+//  justify-content: center;
+//  flex-wrap: wrap;
+//  padding-top: 15px;
+//  padding-bottom: 15px;
+//
+//  .skill {
+//    width: 70px;
+//    height: 70px;
+//    margin: 25px;
+//    cursor: pointer;
+//    transition: all .3s ease-in-out;
+//
+//    .skillItem {
+//      width: inherit;
+//      height: inherit;
+//    }
+//
+//    &:hover {
+//      transform: scale(1.4);
+//    }
+//  }
+//}

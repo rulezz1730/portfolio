@@ -1,0 +1,53 @@
+@import './src/common/styles/variable.module';
+
+.list {
+  margin-top: 45px;
+  width: 100%;
+
+  ul {
+    position: relative;
+    list-style-type: none;
+    padding: 10px 0 0 26px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: hsla(0, 0%, 100%, .15);
+    }
+
+    li {
+      display: list-item;
+      width: 100%;
+      margin-bottom: 45px;
+      text-align: -webkit-match-parent;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 12px;
+        width: 12px;
+        background: nth($mainColor, 2);
+        border-radius: 100%;
+        left: -32px;
+        top: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  .list {
+    ul {
+      li {
+        &::before {
+          top: 8px;
+        }
+      }
+    }
+  }
+}

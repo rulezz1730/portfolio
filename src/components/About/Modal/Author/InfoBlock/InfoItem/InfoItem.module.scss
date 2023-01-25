@@ -1,0 +1,28 @@
+@import "../../../../../../common/styles/variable.module";
+
+.infoItem {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
+  color: #a2a2a2;
+
+  svg {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: nth($mainColor, 2)
+  }
+
+  span {
+    padding-left: 15px;
+
+    a{
+      text-decoration: none;
+      color: white;
+      transition: all 0.2s ease;
+
+      &:hover{
+        color: nth($mainColor, 2)
+      }
+    }
+  }
+}

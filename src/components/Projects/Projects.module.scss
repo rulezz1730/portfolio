@@ -1,0 +1,79 @@
+@import "../../common/styles/variable.module.scss";
+@import "../../App.module.scss";
+
+.myWorksBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 120px;
+  transition: all 2.0s ease;
+
+  .myWorksContainer {
+    width: 1000px;
+    margin: 0 auto;
+
+    h3 {
+      min-width: 100%;
+      padding-bottom: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
+
+      .coloring {
+        color: nth($mainColor, 2);
+      }
+    }
+
+    .jobListContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 60px;
+    }
+  }
+}
+
+@media (min-width: 360px) {
+  .myWorksBlock {
+    .myWorksContainer {
+      max-width: 95%;
+
+      .jobListContainer {
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .myWorksBlock {
+    .myWorksContainer {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .myWorksBlock {
+    .myWorksContainer {
+      .jobListContainer {
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .myWorksBlock {
+    h3 {
+      text-align: center;
+    }
+
+    .jobListContainer {
+      flex-direction: column;
+    }
+  }
+}

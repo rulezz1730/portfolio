@@ -1,0 +1,13 @@
+@import "../../../../../common/styles/variable.module";
+
+i {
+  &::before {
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    content: "\232A";
+    color: nth($mainColor, 2);
+  }
+}

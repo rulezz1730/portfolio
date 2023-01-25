@@ -1,0 +1,141 @@
+@import "./src/common/styles/variable.module.scss";
+
+.coloring {
+  color: nth($mainColor, 2)
+}
+
+.word {
+  color: #fff;
+  font-weight: 400;
+}
+
+.aboutMeModal {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  max-width: 1000px;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  z-index: 100;
+  opacity: 1;
+  transition: all 0.5s ease;
+  transform: scale(0);
+
+  &.active {
+    transform: scale(1);
+  }
+
+  .modalBody {
+    height: 95%;
+    width: 90%;
+    margin: 0 auto;
+
+    .modalContent {
+      display: flex;
+      position: relative;
+      margin: 0 auto;
+      height: 100%;
+      width: 100%;
+      background-color: #222;
+      border-radius: 10px;
+
+      .closeBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        color: white;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        font-size: 18px;
+        z-index: 10;
+        cursor: pointer;
+        transition: all .15s ease;
+      }
+
+      .left {
+        position: relative;
+        min-width: 300px ;
+        min-height: 100%;
+        box-sizing: border-box;
+        border-right: 1px dashed hsla(0, 0%, 100%, .1);
+      }
+
+      .right {
+        width: 65%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden scroll;
+
+        .rightInner {
+          padding: 50px 25px;
+          overflow: hidden scroll;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 900px) {
+  .aboutMeModal {
+
+    .modalBody {
+      height: 95%;
+      width: 90%;
+      margin: 0 auto;
+
+      .modalContent {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        height: 100%;
+        width: 100%;
+        background-color: #222;
+        border-radius: 10px;
+
+        .closeBtn {
+          &:hover {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  .aboutMeModal {
+    justify-content: center;
+    width: 100%;
+
+    .modalBody {
+      .modalContent {
+        flex-direction: column;
+        width: 300px;
+        overflow: hidden scroll;
+
+        .left {
+          min-width: 100%;
+          min-height: auto;
+          border-right: none;
+        }
+
+        .right {
+          min-width: 100%;
+          overflow: unset;
+
+          .rightInner {
+            padding: 50px 25px;
+          }
+        }
+      }
+    }
+  }
+}

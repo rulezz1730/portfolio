@@ -1,0 +1,21 @@
+@import "src/common/styles/variable.module";
+
+.coloring {
+  color: nth($mainColor, 2)
+}
+
+.generalTitle {
+  border-bottom: 1px dashed hsla(0, 0%, 100%, .15);
+  padding-bottom: 15px;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 755px) {
+ .generalTitle{
+   text-align: center;
+ }
+}

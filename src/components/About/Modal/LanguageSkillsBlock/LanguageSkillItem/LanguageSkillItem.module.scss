@@ -1,0 +1,15 @@
+@import "/src/common/styles/variable.module";
+
+.languageItem {
+  //display: block;
+  font-size: 25px !important;
+  text{
+  }
+
+  .title {
+    max-width: 110px;
+    font-size: 15px;
+    color: $mainFontColor;
+    text-align: center;
+  }
+}
